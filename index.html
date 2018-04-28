@@ -23,12 +23,13 @@
 </head>
 
 <body>
-  <div class="coded-by">
-    <p>coded by
-      <a href="https://kostasdegaitas.de" target="_blank" rel="noopener">d3ga</a>
-    </p>
-  </div>
-  <div id="content-container">
+  <div class="jumbotron-fluid">
+    <div class="coded-by">
+      <span>coded by
+        <a href="https://kostasdegaitas.de" target="_blank" rel="noopener">d3ga</a>
+      </span>
+    </div>
+    <div class="background-image container-fluid"></div>
     <h1>Thirsty for beer?</h1>
     <form id="search-form" class="mx-auto form-inline">
       <div class="form-group">
@@ -36,18 +37,18 @@
       </div>
       <button type="submit" class="btn btn-info mr-3">Go!</button>
     </form>
+    <div id="results"></div>
+
+    <div class="container description-wrapper rounded">
+      <p>Search for a variety of beers from
+        <a href="https://www.brewdog.com/" target="_blank" rel="noopener">Brewdog's DIY Dog</a>
+        and read a small description about their characteristics and their origin. Using the
+        <a href="https://punkapi.com/" target="_blank" rel="noopener">Punk API</a>. You can see the code
+        <a href="https://github.com/d3ga/beer-search" target="_blank" rel="noopener">here</a>.
+      </p>
+    </div>
   </div>
 
-  <div id="results"></div>
-
-  <div class="container description-wrapper rounded">
-    <p>Search for a variety of beers from
-      <a href="https://www.brewdog.com/" target="_blank" rel="noopener">Brewdog's DIY Dog</a>
-      and read a small description about their characteristics and their origin. Using the
-      <a href="https://punkapi.com/" target="_blank" rel="noopener">Punk API</a>. You can read the code
-      <a href="https://github.com/d3ga/beer-search" target="_blank" rel="noopener">here</a>.
-    </p>
-  </div>
   <script src="assets/dist/js/app.min.js"></script>
 </body>
 
