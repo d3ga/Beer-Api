@@ -20,33 +20,6 @@ $fa-font-path: "../fonts/";
 
 body {
   font-family: "Quicksand", sans-serif;
-  // margin: 5rem 16rem 16rem 16rem;
-
-  // /* Location of the image */
-  // // background-image: url(https://image.ibb.co/cK8ghx/pexels_photo_681847_1.jpg);
-  // background-image: url(../../images/beers_background.jpeg);
-
-  // /* Background image is centered vertically and horizontally at all times */
-  // background-position: center center;
-
-  // /* Background image doesn't tile */
-  // background-repeat: no-repeat;
-
-  // /* Background image is fixed in the viewport so that it doesn't move when
-  //    the content's height is greater than the image's height */
-  // background-attachment: fixed;
-
-  // /* This is what makes the background image rescale based
-  //    on the container's size */
-  // background-size: cover;
-
-  // /* Set a background color that will be displayed
-  //    while the background image is loading */
-  // background-color: #464646;
-
-  // @include media-breakpoint-down(md) {
-  //   margin: 1rem;
-  // }
 }
 
 .jumbotron-fluid {
@@ -58,8 +31,14 @@ body {
   min-height: 100vh;
   color: #fff;
 
-  @include media-breakpoint-up(sm) {
-    padding: 3rem 3rem;
+  @include media-breakpoint-up(lg) {
+    padding: 3rem 7rem;
+  }
+
+  .coded-by {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: #fff;
   }
 
   .background-image {
@@ -81,36 +60,36 @@ body {
       height: 100%;
     }
   }
-}
 
-h1 {
-  font-family: "Kaushan Script", cursive;
-  font-size: 5rem;
-  color: #fff;
-  text-shadow: #000 1px 0 30px;
-  font-weight: bold;
+  h1 {
+    font-family: "Kaushan Script", cursive;
+    font-size: 5rem;
+    color: #fff;
+    text-shadow: #000 1px 0 30px;
+    font-weight: bold;
 
-  @include media-breakpoint-down(sm) {
-    font-size: 4rem;
+    @include media-breakpoint-down(sm) {
+      font-size: 4rem;
+    }
   }
-}
 
-a {
-  color: $link-color;
-}
+  a {
+    color: $link-color;
+  }
 
-#error {
-  text-align: center;
-}
+  #search-form {
+    margin-bottom: 2rem;
 
-.coded-by {
-  margin-bottom: 1rem;
-  font-size: 0.9rem;
-  color: #fff;
-}
+    .form-group {
+      margin: 0 1rem 0 0;
+      width: 8rem;
 
-#search-form {
-  margin-bottom: 2rem;
+      @include media-breakpoint-up(sm) {
+        margin: 0 2rem 0 0;
+        width: 13rem;
+      }
+    }
+  }
 }
 
 #content-container {
@@ -135,20 +114,14 @@ a {
   padding: 2rem 1rem;
 }
 
-.form-group {
-  margin: 0 1rem 0 0;
-  width: 8rem;
-
-  @include media-breakpoint-up(sm) {
-    margin: 0 2rem 0 0;
-    width: 13rem;
-  }
-}
-
 .alert {
   margin: 1rem 0rem;
 
-  @include media-breakpoint-up(sm) {
-    margin: 1rem 3rem;
+  @include media-breakpoint-up(lg) {
+    margin: 1rem 12rem;
   }
+}
+
+#error {
+  text-align: center;
 }
